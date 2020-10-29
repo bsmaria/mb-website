@@ -7,38 +7,49 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maria Briceño</title>
-    <link rel="canonical" href="http://www.maria-birceno.com/">
+    <link rel="canonical" href="http://www.maria-briceno.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
-    <header class="column">
-        <ul class="navbar row" id="home-nav">
-            <li>
-                <a href="#header">
-                    HOME
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <img src="img/maria-briceno--logo-1-17.png" alt="Logo">
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio">
+    <header>
+        <nav class="d-flex flex-row justify-content-between">
+        <ul class="nav row" id="home-nav">
+            <li class="nav-item align-self-center">
+                <a href="#header" class="nav-link">
                     PORTFOLIO
                 </a>
             </li>
+            <li class="nav-item align-self-center">
+                <a href="#contact" class="nav-link">
+                    CONTACT
+                </a>
+            </li>
         </ul>
-        <div id="hero">            
-            <ul class="row">
+        
+        <a href="index.html">
+        <img src="img/MARIA-BRICENO-LOGO-1.png" alt="Maria Briceno">
+        </a>
+
+        <ul class="nav row" id="icon-bar">
+            <li class="d-flex nav-item align-self-center"><a href="http://instagram.com/bsmaria" class="nav-link" ><i class="fab fa-instagram text-center"></i></a></li>
+            <li class="d-flex nav-item align-self-center"><a href="http://behance.net/mariabriceno" class="nav-link"><i class="fab fa-behance text-center"></i></a></li>
+            <li class="d-flex nav-item align-self-center"><a href="http://github.com/bsmaria_" class="nav-link"><i class="fab fa-github text-center"></i></a></li>
+            <li class="d-flex nav-item align-self-center"><a href="http://linkedin.com/in/mariabriceno" class="nav-link"><i class="fab fa-linkedin text-center"></i></a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="d-flex " id="hero">            
+            <ul class="d-flex flex-row justify-content-between ">
                 <li><div id="secuence"></div></li>
-                <li><img src="img/maria-briceno-photo-17.png" alt="Maria Briceño Photo"></li>
-                <li id="hero-text">
+                <li class="align-self-end"><img src="img/maria-briceno-photo-17.png" alt="Maria Briceño Photo"></li>
+                <li class=" align-self-center" id="hero-text">
                     <p>I help your brand stand out through well thought Graphic Design, dynamic Motion Graphics and Full
                         Stack Web Development_</p>
                     <a href="#contact">Let's Talk!</a>
@@ -46,18 +57,12 @@
                             href="http://www.github.com/bsmaria">Github</a> and <a
                             href="http://www.linkedin.com/in/mariabriceno">LinkedIn.</a></p>
                 </li>
-                <li>
-                    <ul>
-                        <li><a href="http://www.behance.com/mariabriceno"><i class="fab fa-behance"></i></a></li>
-                        <li><a href="http://www.linkedin.com/in/mariabriceno"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="http://www.github.com/bsmaria"><i class="fab fa-github"></i></a></li>
-                        <li><a href="http://www.instagram.com/bsmaria_"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </li>
             </ul>
-        </div>
-    </header>
-    <main>
+        </section>
+
+        <section id="inspiring">
+            <p>With good communication and logic thinking all can be achived.</p>
+        </section>
         
         <section id="portfolio">
             <ul class="column">
@@ -65,7 +70,7 @@
                     <h2>PORT<br>FOLIO</h2>
                 </li>
                 <li>
-                    <ul class="row">
+                    <ul class="grid">
                         <li>
                             <h3>Graphic Design</h3>
                             <div id="graphic-port"></div>
@@ -91,7 +96,7 @@
                     <p>bmaria.contact@gmail.com</p>
                 </li>
                 <li>
-                    <video src=""></video>
+                
                 </li>
             </ul>
         </section>
@@ -117,6 +122,7 @@
             </li>
         </ul>
     </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
