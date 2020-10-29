@@ -1,9 +1,3 @@
-/* *  {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}*/
 
 :root {
     --yellow-color: #DD960A;
@@ -14,10 +8,11 @@
 
 body {
     max-width: 100%;
-    width:90%;
+    width:100vw;
+    height: auto;
     position: relative;
-    font-family: open sans, sans-serif;
-        list-style: none;
+    font-family: "open sans", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -26,8 +21,10 @@ header {
     height: auto;
 }
 
+/* NAVIGATION BAR*/
+
 nav {
-    padding:20px 20px;
+    padding:20px 75px;
     display:block;
     width: 100%;
     position:fixed;
@@ -35,25 +32,33 @@ nav {
     left:0;
     background-color: var(--white-color);
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
 }
 
-nav #home-nav a{
+nav #home-nav a[href="#header"],
+nav #home-nav a[href="#contact"]
+ {
     color:var(--blue-color);
     transition: .3s ease-in;
 }
 
-nav #home-nav a:hover {
+nav #home-nav a[href="#header"]:hover,
+nav #home-nav a[href="#contact"]:hover
+ {
     text-decoration: underline;
 }
 
-nav a img {
-    position:absolute;
+
+
+nav a img[alt="Maria Briceno"] {
+    position: absolute;
+    display:block;
     top:0;
-    left:45%;
-    right:50%;
+    left:47%;
     width:7%;
     height: auto;
-    transition: .3s ease-in;
+    margin:0px auto;
+    transition: .3s ease;
     background-color: #F6F6F8;
     border-radius: 50%;
 }
@@ -63,21 +68,37 @@ transform: rotate(-45deg);
 }
 
 nav #icon-bar li a {
+    position:relative;
     color:var(--white-color);
     display:block;
-    width:30px;
-    height:30px;
-    margin:0px 10px;
-    border-radius: 15px;
+    width:40px;
+    height:40px;
+    margin:0px 15px;
+    border-radius: 20px;
     background-color:var(--blue-color);
+    z-index:998;
 }
 
 nav #icon-bar li a:hover {
     transform:scale(1.1);
 }
 
+nav #icon-bar li a i {
+    color: var(--white-color);
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:999;
+}
+
+/* END OF NAVIGATION BAR    ///////////////////////////////////////////////// */
+
+/* HERO DETAILS /////////////////////////////////////////////////////////////////////////////////////*/
+
 #hero {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--yellow-color);
 }
@@ -85,4 +106,217 @@ nav #icon-bar li a:hover {
 #hero ul {
     list-style-type: none;
     list-style: none;
+}
+
+#home {
+    width:100%;
+    height:auto;
+}
+
+#scroll-secuence {
+    position: fixed;
+    top:350px;
+    left:35px;
+    width:8px;
+    height:400px;
+    background-color:var(--white-color);
+    border-radius: 4px;
+} 
+
+#hero #home img[src="img/MARIA-BRICENO-PORTRAIT.png"] {
+    width:80%;
+    height: auto;
+    padding-right:80px;
+    margin-left:200px;
+    margin-bottom:-16px;
+}
+
+#hero #home #hero-text {
+    display:block;
+    width:34%;
+    height:auto;
+    margin:500px 300px 0px auto;
+    color:var(--blue-color);
+}
+
+#hero #home #hero-text p {
+    font-size:19px;
+}
+
+#hero #home #hero-text a[href="#contact"] {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:70px;
+    margin:20px 0px;
+    color:var(--blue-color);
+    font-size:20px;
+    font-weight: 800;
+    background-color:var(--yellow-color);
+    border:3px solid var(--blue-color);
+    border-radius:8px;
+    transition: .3s ease-in-out;
+}
+#hero #home #hero-text a[href="#contact"]:hover {
+    background-color: var(--white-color);
+    border:none;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+    text-decoration:none;
+}
+
+#hero #home #hero-text #hero-main-links {
+    font-size:14px;
+}
+
+/* END OF THE HERO    ///////////////////////////////////////////////// */
+
+
+/* INSPIRATIONAL QUOTE     /////////////////////////////////////////////////////////////////////////////////////   */
+
+#inspiring {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background-color:var(--white-color);
+    font-size:25px;
+    color:var(--black-color)
+}
+
+#inspiring p:before {
+    content:"''";
+    color:var(--blue-color);
+    font-weight: 800;
+    font-size:120px;
+    position:absolute;
+    top:45%;
+    transform:translate(-50%, -50%)
+}
+
+
+/* END OF INSPIRATIONAL QUOTE     ///////////////////////////////   */
+
+/* PORTFOLIO     ///////////////////////////////////////////////////////////////////////////////////////////   */
+
+#portfolio {
+    position:relative;
+    width:100%;
+    height: auto;
+    padding:60px 75px;
+}
+
+
+#portfolio ul {
+    list-style-type: none;
+}
+
+#portfolio #portfolio-content {
+    width:100%; 
+    margin:0;
+    padding:0;
+}
+
+#portfolio #portfolio-content #portfolio-heading h2{
+    display:block;
+    color:var(--blue-color);
+    font-size:60px;
+    font-weight: 800;
+    
+}
+
+#portfolio #portfolio-content #portfolio-galery-1 {
+    margin:20px 0px;
+}
+
+.portfolio-item {
+    position:relative;
+    display:block;
+    margin:20px 0px;
+    height:auto;
+    color:var(--blue-color);
+    background-color:var(--white-color);
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+    padding:20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.portfolio.item:hover {
+    transform:scale(1.2);
+}
+
+.portfolio-item:active {
+    transform:scale(0.99);
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto) ;
+    grid-row-gap:10px;
+    grid-column-gap:30px;
+}
+
+#gd-item {
+    display:block;
+    width:100%;
+    height: 100%;
+    grid-column: 2/6;
+    grid-row:1/3;
+    padding:0;
+}
+
+#mg-item {
+    display:block;
+    width:100%;
+    height: 300px;
+    height: auto;
+    grid-column: 6/12;
+    grid-row:1/3;
+    padding:0;
+}
+#fe-item {
+    display:block;
+    height: 300px;
+    width:100%;
+    height: auto;
+    grid-column:2/12;
+    grid-row:3/7;
+    padding:0;
+}
+
+#graphic-port img {
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:1000px;
+    object-fit: none;
+}
+#motion-port img {
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    object-fit: none;
+}
+#ux-port img {
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    object-fit: none;
+}
+#frontend-port img {
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    object-fit: none;
 }
