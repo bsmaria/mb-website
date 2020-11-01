@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,16 +50,14 @@
                 <li id="scroll-secuence"><span id="scroll-secuence-inside"></span></li>
                 <li class="align-self-end"><img src="img/MARIA-BRICENO-PORTRAIT-20.png" alt="Maria Briceño Photo"></li>
                 <li class=" align-self-center" id="hero-text">
-                    <p>I'll help your brand stand out through well thought Graphic Design, dynamic Motion Graphics and Full
-                        Stack Web Development_</p>
-                    <a href="#contact">LET'S TALK!</a>
-                   <!--<p id="hero-main-links">Take a look at my <a href="http://www.behance.com/mariabriceno">Behance</a>, <a
-                            href="http://www.github.com/bsmaria">Github</a> and <a
-                            href="http://www.linkedin.com/in/mariabriceno">LinkedIn.</a></p> --> 
+                    <p>Hi! I'm Maria,</p>
+                    <p> I'll help your brand stand out through well thought Graphic Design, dynamic Motion Graphics and Front End web development.</p>
+                    <a href="#contact">LET'S TALK!</a> 
                 </li>
             </ul>
         </section>
         <section id="inspiring">
+            
             <p>With <strong>good communication</strong>  and  <strong>logic thinking</strong> <br> all can be achived.</p>
         </section> 
         <section class="d-flex align-items-center" id="portfolio">
@@ -65,9 +65,10 @@
                 <li id="portfolio-heading">
                     <h2>PORTFOLIO</h2>
                 </li>
+                
                 <li class="d-flex justify-content-center" id="portfolio-galery-1">
-                    <ul class="d-flex flex-row align-items-center justify-content-between" id="portfolio-items">
-                        <li class="portfolio-item d-flex align-items-center justify-content-center">
+                    <ul class="container-fluid row" id="portfolio-items">
+                        <li class="col-md portfolio-item d-flex align-items-center justify-content-center">
                             <h3 class="port-text "><a href="http://behance.net/mariabriceno" target="_blank">GRAPHIC <br> DESIGN</a></h3>
                             <div id="graphic-port">
                                 <a href="http://behance.net/mariabriceno" target="_blank">
@@ -75,8 +76,8 @@
                                  </a>
                             </div>
                         </li>
-                        <li class="portfolio-item d-flex align-items-center justify-content-center">
-                            <h3 class="port-text"><a href="https://www.behance.net/gallery/80602301/Motion-Graphics-VOL-1" target="_blank">MOTION GRAPHICS</a></h3>
+                        <li class="col-md portfolio-item d-flex align-items-center justify-content-center">
+                            <h3 class="port-text"><a href="https://www.behance.net/gallery/80602301/Motion-Graphics-VOL-1" target="_blank">MOTION <br> GRAPHICS</a></h3>
                             <div id="motion-port">
                                 <a href="https://www.behance.net/gallery/80602301/Motion-Graphics-VOL-1" target="_blank">
                                 <img src="img/dfedbb105270129.5f7526302ae01.jpg" alt="">
@@ -84,14 +85,16 @@
                             </div>
                             
                         </li>
-                        <!--
-                        <li class="portfolio-item d-flex align-items-center justify-content-center">
+                        <!--         
+                        <li class="col-md portfolio-item d-flex align-items-center justify-content-center">
                             <h3 class="port-text">UI/UX <br> DESIGN</h3>
                             <div id="ux-port">
-                                <img src="img/sd.jpg" alt="">
+                                <a href="http://github.com/bsmaria" target="_blank">
+                                <img src="" alt="">
+                                </a>
                             </div>
-                        </li> -->
-                        <li class="portfolio-item d-flex align-items-center justify-content-center">
+                        </li> -->                        
+                        <li class="col-md portfolio-item d-flex align-items-center justify-content-center">
                             <h3 class="port-text"><a href="http://github.com/bsmaria" target="_blank">FRONT-END DEVELOPMENT</a></h3>
                             <div id="frontend-port">
                                 <a href="http://github.com/bsmaria" target="_blank">
@@ -99,13 +102,24 @@
                             </a>
                             </div>
                         </li>
-                    </ul>
+                    </ul> 
+
+                    <!-- SLIDESHOT DEL SITIO WEB - PROTOTIPO -->
+
+                    <!--  <ul class="j-galery">
+                        <li><img src="img/a1145580599725.5ce5ac218a422.jpg" alt=""></li>
+                        <li><img src="img/a1145580599725.5ce5ac218a422.jpg" alt=""></li>
+                        <li><img src="img/a1145580599725.5ce5ac218a422.jpg" alt=""></li>
+                        <li><img src="img/a1145580599725.5ce5ac218a422.jpg" alt=""></li>
+                        <li><img src="img/a1145580599725.5ce5ac218a422.jpg" alt=""></li>
+                    </ul> -->
+
                 </li>            
             </ul>
         </section>
         <section class="d-flex flex-row align-items-center justify-content-between" id="contact">
             <ul class="d-flex align-items-center" id="form-contact">
-                <li class="" id="form-inside">
+                <li id="form-inside">
                     <h3>SAY HI!</h3>
                     <p>If you want to work with me, <br> give me some feedback or simply say hi <br> get in touch trough my email!
                     </p>
@@ -166,6 +180,7 @@
         </ul>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
