@@ -17,20 +17,24 @@ ul, li {
     padding:0;
 }
 
+header {
+    position:relative;
+    z-index:999;
+}
 header nav {
     justify-content:space-between;
 }
 
-header nav #navigation-links ul li a {
+header nav #navigation-links li a {
     color:var(--blue-color) ;
     margin:0px 10px;
 }
-header nav #navigation-social-media ul li a {
+header nav #navigation-social-media li a {
     font-size:20px;
     color:var(--blue-color);
 }
-header nav #navigation-links ul li a:hover,
-header nav #navigation-social-media ul li a {
+header nav #navigation-links  li a:hover,
+header nav #navigation-social-media li a {
     text-decoration: underline;
 }
 
@@ -423,12 +427,26 @@ footer #copyright-text a {
 /* ------------------------------------------------------------------------ MOBILE DEVICE */
 
 @media (max-width: 480px) {
+    header nav #navigation-links li a {
+        margin:0px 10px;
+        padding-left:20px;
+    }
+    header nav #navigation-social-media li a {
+        font-size:20px;
+        margin:0px 10px;
+        padding-left:20px;
+    }
+    header nav #navigation-social-media {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
     main #hero {
-        margin:0px 40px;
-        padding:40px 40px 40px 40px;
+        margin:0px 0px;
+        padding:60px 30px 40px 30px;
     }
     main #hero li h1 {
-        font-size:25px;
+        font-size:28px;
     }
     
     main #hero li h1 span {
@@ -456,16 +474,14 @@ footer #copyright-text a {
     }
 
     main #portfolio #portfolio-title {
-        padding:0px 40px 30px 40px;
+        padding:0px 30px 30px 30px;
     }
 
     main #portfolio #portfolio-galery {
         flex-direction: column;
-        width:100%;
     }
 
     main #portfolio .img-portfolio-hover {
-        width:100%;
         margin:0px 0px 0px 0px;
     }
 
@@ -491,7 +507,7 @@ footer #copyright-text a {
         height:auto;
         background-color: var(--white-color);
         margin:-300px auto 0px auto;
-        padding:400px 40px 0px 40px;
+        padding:400px 30px 0px 30px;
         z-index:-2;
     }
 
@@ -515,7 +531,7 @@ footer #copyright-text a {
     }
 
     main #contact #contact-form {
-        padding:160px 40px;
+        padding:160px 30px;
         width:100%;
     }
 
@@ -524,8 +540,8 @@ footer #copyright-text a {
     }
 
     footer #footer-logo {
-        padding:40px 40px 40px 40px;
-        width:100%;
+        padding:40px 30px 40px 30px;
+        margin:0;
         flex-direction:column;
     }
     
@@ -535,15 +551,16 @@ footer #copyright-text a {
         margin:0px auto 0px auto;
     }
     
-    footer #footer-social-media-icons {
-        width:100%;
+    footer #footer-social-media-icons a {
+        margin-top:30px;
+        justify-content: center!important;
     }
     
     footer #footer-logo a {
         width:30px;
     }
     footer #footer-widget-bar {
-        padding:0px 40px 30px 40px;
+        padding:0px 30px 30px 30px;
         flex-direction:column;
     }
 
