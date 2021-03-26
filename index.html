@@ -66,8 +66,8 @@
             </li>
         </ul>
         <ul class="d-flex flex-column justify-content-center align-items-center " id="portfolio">
-            <li class="container-fluid">
-                <div class="row justify-content-between title-section" id="portfolio-title">
+            <li class="container-fluid p-0">
+                <div class="row justify-content-between title-section no-gutters" id="portfolio-title">
                     <div class="col-md-7">
                         <h4>Latest Projects</h4>
                         <p>Branding, Motion graphics, Social media and more.</p>
@@ -187,17 +187,21 @@
         <ul class="d-flex align-items-center no-gutters" id="contact">
             <li id="contact-form">
                 <form id="myform" action="/">
-                    <h5>Contact Us</h5>
+                    <div class="title-section">
+                        <h5>Contact me!</h5>
+                        <p>If you need any of my services, you want to give some feedback or you just want to say hi.</p>
+                     </div>
                     <div class="info">
                         <input class="name" type="text" name="name" placeholder="Full name" required> <br>
                         <input type="text" name="name" placeholder="Email" required><br>
                         <input type="text" name="name" placeholder="Website"><br>
                     </div>
-                    <p>Message</p>
+                    
                     <div>
-                        <textarea rows="4"></textarea>
+                        <label style="margin:20px 0px; font-weight: 700;" for="message">Message</label>
+                        <textarea rows="15" placeholder="Write here..."></textarea>
                     </div>
-                    <button type="submit" href="/">Submit</button>
+                    <button type="submit" href="/" id="submit-button">Submit</button>
                 </form>
             </li>
             <li id="contact-image">
@@ -207,7 +211,7 @@
 
     </main>
     <footer class="container-fluid p-0">
-        <div class="row no-gutters">
+        <div class="row no-gutters" id="footer-info">
             <div class="col container-fluid p-0">
                 <div class="row d-flex justify-content-between no-gutters" id="footer-logo">
                     <div class="col d-flex align-items-center">
@@ -265,7 +269,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col d-flex flex-column container-fluid p-0">
+                    <div class="col d-flex flex-column">
                         <h5>Follow me on instagram!</h5>
                         <ul class="row no-gutters">
                             <li clasS="col">
@@ -291,7 +295,7 @@
                 </a>
             </div>
         </div>
-        <div id="copyright-text">
+        <div class="row no-gutters" id="copyright-text">
             <p>© 2021 <a href="https://maria-briceno.com">Maria Briceño</a>, All Rights Reserved.</p>
         </div>
 
