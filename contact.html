@@ -54,18 +54,22 @@
     <main class="container-fluid justify-content-center p-0">
         <ul class="d-flex align-items-center no-gutters" id="contact">
             <li id="contact-form">
-                <form id="myform" action="/">
-                    <h5>Contact Us</h5>
+                <form name="contact" id="myform" action="/" method="POST" data-netlify="true">
+                    <div class="title-section">
+                        <h5>Contact me!</h5>
+                        <p>If you need any of my services, you want to give some feedback or you just want to say hi.</p>
+                     </div>
                     <div class="info">
                         <input class="name" type="text" name="name" placeholder="Full name" required> <br>
                         <input type="text" name="name" placeholder="Email" required><br>
                         <input type="text" name="name" placeholder="Website"><br>
                     </div>
-                    <p>Message</p>
+                    
                     <div>
-                        <textarea rows="4"></textarea>
+                        <label style="margin:20px 0px; font-weight: 700;" for="message">Message</label>
+                        <textarea rows="15" placeholder="Write here..."></textarea>
                     </div>
-                    <button type="submit" href="/">Submit</button>
+                    <button type="submit" href="/" id="submit-button">Submit</button>
                 </form>
             </li>
             <li id="contact-image">
